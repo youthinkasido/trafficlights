@@ -1,0 +1,44 @@
+.traffic-light > div {
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  background: #777;
+}
+
+body {
+  display: flex;
+}
+
+.traffic-light {
+  border: 1px solid black;
+  display: inline-block;
+  background: #333;
+}
+
+.light-controls {
+  width: 50%;
+  height: 200px;
+  border: 1px solid red;
+  margin: auto;
+}
+
+#change-light-button {
+  height: 60px;
+  text-align: center;
+  width: 200px;
+  font-size: 20px;
+}
+
+#green-light {
+}
+
+#yellow-light {
+}
+
+#red-light {
+}

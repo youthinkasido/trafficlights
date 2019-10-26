@@ -1,0 +1,25 @@
+{
+  "name": "trafficlights",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youthinkasido/trafficlights.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youthinkasido/trafficlights/issues"
+  },
+  "homepage": "https://github.com/youthinkasido/trafficlights#readme",
+  "dependencies": {
+    "jQuery": "^1.7.4",
+    "jquery": "^3.4.1",
+    "node": "^12.12.0"
+  }
+}
