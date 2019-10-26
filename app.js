@@ -36,3 +36,49 @@ function changeLight(changeLightButton, currentLight) {
         currentLight++
     })
 }
+
+class TrafficLight {
+    constructor() {
+        this.lights = []
+    }
+
+    generateLights() {
+        const colors = ['green', 'yellow', 'red']
+        colors.forEach(color => {
+            let light = document.createElement('div')
+            light.setAttribute('id', color)
+            this.lights.push(light)
+        })
+        const light = this.lights[0];
+        light.classList.add(light.id)
+    }
+
+    renderTrafficLight() {
+        this.generateLights();
+        const trafficLightInstance = document.querySelector('#traffic-light-instance') // <div>
+        const trafficContainer = document.createElement('div')
+        trafficContainer.classList.add('traffic-container')
+        trafficLightInstance.appendChild(trafficContainer) //
+        this.lights.forEach(light => {
+            trafficContainer.appendChild(light)
+        })
+    }
+
+    changeLight() {
+        const currentLight = this.lights.shift() // green 
+        currentLight.classList.remove(currentLight.id)
+        this.lights.push(currentLight);
+        const nextLight = this.lights[0];
+        nextLight.classList.add(nextLight.id)
+        console.log(nextLight)
+    }
+}
+
+window.addEventListener('load', () => {
+    const trafficLight = new TrafficLight()
+    trafficLight.renderTrafficLight();
+    let changeLight = document.getElementById('change-light-button')
+    changeLight.addEventListener('click', () => {
+        trafficLight.changeLight()
+    })
+})

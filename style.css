@@ -23,7 +23,6 @@ body {
 
 .light-controls {
   border: 1px solid red;
-  margin: auto;
 }
 
 #change-light-button {
@@ -31,4 +30,49 @@ body {
   text-align: center;
   width: 200px;
   font-size: 20px;
+}
+
+/* class mode */
+
+.traffic-container > div {
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  border: 10px solid #222;
+  background-color: #333;
+}
+
+.traffic-container {
+  border: 10px solid #222;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 150px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #444;
+}
+
+.traffic-light-instance {
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+.green {
+  background-color: green !important;
+}
+
+.yellow {
+  background-color: yellow !important;
+}
+
+.red {
+  background-color: red !important;
 }
